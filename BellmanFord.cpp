@@ -13,18 +13,21 @@ void bellmanFord(int src ,int v, int mat[][10]){
          
          for(int j = 0 ; j < v ; j++){
              for(int k = 0 ; k< v ;k++){
+                 
                  if(mat[j][k]!=0){
-	 					if(dist[j]+mat[j][k]<dist[k]){
-	 						dist[k]=dist[j]+mat[j][k];
+                     
+	 		if(dist[j]+mat[j][k]<dist[k]){
+	 					    
+	 		ist[k]=dist[j]+mat[j][k];
 						 
-						 }
-					 }
+			 }
+		 }
              }
          }
          for(int b=0;b<v;b++){
-			 	cout<<dist[b]<<" ";
-			 }
-			 cout<<endl;
+		cout<<dist[b]<<" ";
+	}
+	 cout<<endl;
      }
      
      for(int i=0;i<v;i++){
@@ -40,11 +43,12 @@ void bellmanFord(int src ,int v, int mat[][10]){
     for(int j = 0 ; j < v ; j++){
              for(int k = 0 ; k< v ;k++){
                  if(mat[j][k]!=0){
-	 					if(dist[j]+mat[j][k]<dist[k]){
-	 						dist[k]=dist[j]+mat[j][k];
+	 		if(dist[j]+mat[j][k]<dist[k]){
+	 					    
+	 		dist[k]=dist[j]+mat[j][k];
 						 
-						 }
-					 }
+			 }
+		 }
              }
     }
     for(int i=0 ;i < v ;i++){
