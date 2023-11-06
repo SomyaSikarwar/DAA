@@ -18,7 +18,7 @@ void bellmanFord(int src ,int v, int mat[][10]){
                      
 	 		if(dist[j]+mat[j][k]<dist[k]){
 	 					    
-	 		ist[k]=dist[j]+mat[j][k];
+	 		dist[k]=dist[j]+mat[j][k];
 						 
 			 }
 		 }
